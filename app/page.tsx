@@ -3,12 +3,10 @@ export const metadata = {
   description: 'Ben&apos;s Site',
 };
 
-export default function RingOfFire() {
+export default function Home() {
   return (
-    <div>
-        <body>
-          <a href='/BandWebsite'>Band Website</a>
-        </body>
-    </div>
+      <body>
+        <a href='/BandWebsite'>Band Website</a>
+      </body>
   );
 }
