@@ -25,12 +25,12 @@ export default function AlainTrudel() {
                 
                 <div className="grid-item item2">
                     <h3>Professional Achievements</h3>
-                    <p>Trudel is a highly decorated trombonist and conductor, having won awards including the Virginia Parker Award, the Mildred Dixon Holmes Award, Le grand prix de l'Académie Charles Cros, the Choc de l'Année of Le Monde la Musique, a Prix Opus, a Juno award and the 2008 Heinz Unger award.</p>
+                    <p>Trudel is a highly decorated trombonist and conductor, having won awards including the Virginia Parker Award, the Mildred Dixon Holmes Award, Le grand prix de l&apos;Académie Charles Cros, the Choc de l&apos;Année of Le Monde la Musique, a Prix Opus, a Juno award and the 2008 Heinz Unger award.</p>
                 </div>
                 
                 <div className="grid-item item3">
                     <h3>What Makes Him Unique?</h3>
-                    <p>Alain Trudel is considered one of the most talented trombonists and conductors in the world. “[Trudel] plays trombone just as he breathes, with such ease and facility that one is not made aware of the technical challenges involved' (Quebec City Le Soleil, 5 Dec 1989) He is a pioneer in Canadian brass, his skill and technique pushing him beyond many greats of the field.</p>
+                    <p>Alain Trudel is considered one of the most talented trombonists and conductors in the world. “[Trudel] plays trombone just as he breathes, with such ease and facility that one is not made aware of the technical challenges involved&apos; (Quebec City Le Soleil, 5 Dec 1989) He is a pioneer in Canadian brass, his skill and technique pushing him beyond many greats of the field.</p>
                 </div>
                 
                 <div className="grid-item item4">

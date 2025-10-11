@@ -34,7 +34,7 @@ export default function AbbieConant() {
                 </div>
                 
                 <div className="grid-item item4">
-                    <p>This is Abbie Conant's work, Alethia. This recording demonstrates perfectly how she is able to combine theatre and the trombone, while using aspects of her life as a form of activism, making for a truly unique performance.</p>
+                    <p>This is Abbie Conant&apos;s work, Alethia. This recording demonstrates perfectly how she is able to combine theatre and the trombone, while using aspects of her life as a form of activism, making for a truly unique performance.</p>
                     <div className="video-container">
                         <iframe src="https://www.youtube.com/embed/XZrBZSIT0G0?si=ET84myoXzVPQ5ELJ" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 

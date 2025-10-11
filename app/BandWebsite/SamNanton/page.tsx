@@ -34,7 +34,7 @@ export default function SamNanton() {
             </div>
             
             <div className="grid-item item4">
-                <p>This performance is really cool to see, because it's clear that Nanton's usage of the plunger technique has really changed the way this group plays, and completely changes the feel of the solo.</p>
+                <p>This performance is really cool to see, because it&apos;s clear that Nanton&apos;s usage of the plunger technique has really changed the way this group plays, and completely changes the feel of the solo.</p>
                 <div className="video-container">
                     <iframe src="https://www.youtube.com/embed/qDQpZT3GhDg" 
                             frameBorder="0" 
