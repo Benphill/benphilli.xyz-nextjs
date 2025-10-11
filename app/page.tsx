@@ -5,8 +5,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-      <body>
-        <a href='/BandWebsite'>Band Website</a>
-      </body>
+      <div>
+          <a href='/BandWebsite'>Band Website</a>
+      </div>
   );
 }
