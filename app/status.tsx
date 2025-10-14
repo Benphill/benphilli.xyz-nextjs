@@ -1,5 +1,4 @@
 import { promises as fs } from 'fs';
-import prisma from './prismainit';
 
 
 export default async function Status() {
