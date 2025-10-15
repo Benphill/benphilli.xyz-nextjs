@@ -27,8 +27,9 @@ export default function VisitorCounter() {
   if (loading) return <div>Loading...</div>;
   
   return (
-    <div className="text-sm text-gray-600">
-      Visitors: {count?.toLocaleString() || '—'}
+    <div>
+        <br />
+       - cool people: {count?.toLocaleString() || '—'}
     </div>
   );
 }
