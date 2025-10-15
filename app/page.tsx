@@ -26,16 +26,16 @@ export default async function Home() {
             <div className="bg-maincol mr-1 mt-4 p-2 border-2 border-black">
               <h1 className="text-2xl font-bold font-mono text-shadow-[0px_0px_2px_#fff]">~ Navigation</h1>
               <Link href="/blog" className="hover:text-shadow-[0px_0px_2px_#fff]">
-                <br /> - Blog <br />
+                <br /> - blog <br />
               </Link>
               <Link href="/obsessions" className="hover:text-shadow-[0px_0px_2px_#fff]">
-                 - Obsessions <br />
+                 - obsessions <br />
               </Link>
               <Link href="/guestbook" className="hover:text-shadow-[0px_0px_2px_#fff]">
-                 - Guestbook <br />
+                 - guestbook <br />
               </Link>
               <Link href="/gallery" className="hover:text-shadow-[0px_0px_2px_#fff]">
-                 - Gallery <br />
+                 - gallery <br />
               </Link>
             </div>
             <div className="bg-maincol mr-1 mt-4 p-2 border-2 border-black">

@@ -4,8 +4,9 @@ import { get } from '@vercel/edge-config'
 
 export default async function Status() {
     let status = 'No status set';
+    const env = process.env.NODE_ENV
 
-    if (process.env.EDGE_CONFIG) {
+    if (env == "production") {
         status = (await get('status') as string) || 'No status set';
   } else {
     // For local dev, use a default message
