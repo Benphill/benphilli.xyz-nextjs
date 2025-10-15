@@ -1,4 +1,3 @@
-import { promises as fs } from 'fs';
 import { get } from '@vercel/edge-config'
 
 

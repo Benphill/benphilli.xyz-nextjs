@@ -2,6 +2,7 @@ import Link from "next/link";
 import "./styles.css"
 import Head from 'next/head'
 import Status from './status'
+import VisitorCounter from "./components/VisitorCounter";
 
 export const metadata = {
   title: 'Ben ~ Jasper',
@@ -9,7 +10,6 @@ export const metadata = {
 };
 
 export default async function Home() {
-
   return (
       <div className="basis-[100%] text-red-100 font-mono">
           <Head>
@@ -39,6 +39,8 @@ export default async function Home() {
               </Link>
             </div>
             <div className="bg-maincol mr-1 mt-4 p-2 border-2 border-black">
+              <h1 className="text-2xl font-bold font-mono text-shadow-[0px_0px_2px_#fff]">~ Visits</h1>
+              <VisitorCounter />
             </div>
           </div>
           <div className="bg-lightcol basis-[100%] ml-1 mt-4 p-2 border-2 border-black">
