@@ -1,14 +1,15 @@
 import Link from "next/link";
 import "./styles.css"
 import Head from 'next/head'
-import Status from '@/app/status'
+import Status from './status'
 
 export const metadata = {
   title: 'Ben ~ Jasper',
   description: 'Ben&apos;s Site',
 };
 
-export default function Home() {
+export default async function Home() {
+
   return (
       <div className="basis-[100%] text-red-100 font-mono">
           <Head>
