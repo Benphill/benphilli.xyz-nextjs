@@ -3,6 +3,7 @@ import "./styles.css"
 import Head from 'next/head'
 import Status from './status'
 import VisitorCounter from "./components/VisitorCounter";
+import ImageMarquee from "./buttonscroll";
 
 export const metadata = {
   title: 'Ben ~ Jasper',
@@ -17,7 +18,7 @@ export default async function Home() {
           </Head>
         <div className="bg-maincol basis-[100%] border-2 border-black h-52">
         </div>
-        <div className="h-165 basis-1/1 flex items-start pb-5">          
+        <div className="h-165 basis-1/1 lg:flex items-start pb-5">          
           <div className="basis-2/5 mr-1 mt-1 p-2">
             <div className="bg-maincol mr-1 mt-1 p-2 border-2 border-black">
               <h1 className="text-2xl font-bold font-mono text-shadow-[0px_0px_2px_#fff]">~ Status</h1>
@@ -43,9 +44,11 @@ export default async function Home() {
               <VisitorCounter />
             </div>
           </div>
-          <div className="bg-lightcol basis-[100%] ml-1 mt-4 p-4 border-2 border-black h-135">
+          <div className="bg-lightcol basis-3/5 ml-1 mt-4 border-2 border-black h-135">
             <h1 className="text-4xl font-bold font-mono text-shadow-[0px_0px_2px_#fff] text-center">~ Welcome ~</h1>
-            
+            <div>
+              <ImageMarquee />
+            </div>
           </div>
         </div>
       </div>

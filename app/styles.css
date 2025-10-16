@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@keyframes scroll-infinite {
+    from {
+    transform: translateX(0);
+    }
+    to {
+    transform: translateX(calc(-1 * (88px + 1rem) * 6));
+    }
+}
+
+.animate-scroll-infinite {
+    animation: scroll-infinite 8s linear infinite;
+    will-change: transform;
+}
+
+.animate-scroll-infinite:hover {
+    animation-play-state: paused;
+}
