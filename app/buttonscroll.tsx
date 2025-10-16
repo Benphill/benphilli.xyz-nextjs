@@ -22,7 +22,7 @@ export default function ImageMarquee() {
   ];
 
   return (
-    <div className="w-full max-w-md lg:max-w-xl xl:max-w-3xl 2xl:max-w-5xl mx-auto mt-8 pt-1 pb-1 bg-maincol">
+    <div className="max-w-full mt-8 pt-1 pb-1 bg-maincol">
       {/* Container that clips overflow */}
       <div className="relative overflow-hidden">
         {/* Scrolling wrapper - duplicated many times for truly infinite scroll */}

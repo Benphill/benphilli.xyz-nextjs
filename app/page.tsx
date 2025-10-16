@@ -12,13 +12,13 @@ export const metadata = {
 
 export default async function Home() {
   return (
-      <div className="basis-[100%] text-red-100 font-mono">
+      <div className="w-[100%] text-red-100 font-mono">
           <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           </Head>
         <div className="bg-maincol basis-[100%] border-2 border-black h-52">
         </div>
-        <div className="h-165 basis-1/1 lg:flex items-start pb-5">          
+        <div className="h-165 basis-1/1 lg:flex items-start pb-5 min-w-0 max-w-[100%]">          
           <div className="basis-2/5 mr-1 mt-1 p-2">
             <div className="bg-maincol mr-1 mt-1 p-2 border-2 border-black">
               <h1 className="text-2xl font-bold font-mono text-shadow-[0px_0px_2px_#fff]">~ Status</h1>
@@ -44,7 +44,7 @@ export default async function Home() {
               <VisitorCounter />
             </div>
           </div>
-          <div className="bg-lightcol basis-3/5 ml-1 mt-4 border-2 border-black h-135">
+          <div className="bg-lightcol basis-3/5 max-w-2xl mt-4 border-2 border-black h-135 min-w-0">
             <h1 className="text-4xl font-bold font-mono text-shadow-[0px_0px_2px_#fff] text-center">~ Welcome ~</h1>
             <div>
               <ImageMarquee />
