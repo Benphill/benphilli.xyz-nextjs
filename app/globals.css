@@ -22,13 +22,13 @@
     --foreground: #000000;
     --bloo: #7DBACB;
     --lightbloo: #896D6B;
-    --maincol: #443A39;
+    --maincol: #ffffff56;
     --lightcol: #896D6B;
   }
 }
 
 body {
-  background-image: url(/bg.png);
+  background-image: url(/pink.jpg);
   background-size: 2 rem;
   background-repeat: repeat;
   color: var(--foreground);
