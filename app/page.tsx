@@ -58,12 +58,12 @@ export default async function Home() {
             <h1 className="text-4xl font-bold font-mono text-shadow-[0px_0px_2px_#500724] text-center mt-4">~ Welcome ~</h1>
             <ImageMarquee />
             <div className="p-4">
-              <p className="text-xl">hey, i'm Ben! (he/him) this is my personal website where i might post some stuff idk</p>
+              <p className="text-xl">hey, i&apos;m Ben! (he/him) this is my personal website where i might post some stuff idk</p>
               <br /> 
               <Image src="https://web.archive.org/web/20091027021325if_/http://ca.geocities.com/artist_etc/Misc-Animations/Animals-Plants/ani_Fish-Outline2-Says-Hi.gif" alt="fish says hi" width={309} height={40} className="m-auto"></Image>
               <h1 className="text-2xl text-shadow-[0px_0px_2px_#500724]">about me</h1>
               <br />
-              <p className="text-xl">i'm a student currently pursuing a career in mechanical engineering or possibly mechatronics. i also play the trombone and love video games like celeste, deltarune, and oneshot. i'm a part of the 2702 Rebels FIRST robotics team, where i've grown a love for cad design and metal manufacturing.</p>
+              <p className="text-xl">i&apos;m a student currently pursuing a career in mechanical engineering or possibly mechatronics. i also play the trombone and love video games like celeste, deltarune, and oneshot. i&apos;m a part of the 2702 Rebels FIRST robotics team, where i&apos;ve grown a love for cad design and metal manufacturing.</p>
               <a href="/obsessions" className="text-lg underline">Read More</a>
             </div>
           </div>
