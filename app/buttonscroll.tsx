@@ -2,7 +2,6 @@ import "./styles.css"
 import Image from "next/image";
 
 export default function ImageMarquee() {
-  // Sample image URLs - replace with your actual images
   const images = [
     "https://max.nekoweb.org/images/button.png",
     "https://cyber.dabamos.de/88x31/bestcanada.gif",
@@ -32,11 +31,8 @@ export default function ImageMarquee() {
 
   return (
     <div className="max-w-full mt-4 pt-1 pb-1">
-      {/* Container that clips overflow */}
       <div className="relative overflow-hidden">
-        {/* Scrolling wrapper - duplicated many times for truly infinite scroll */}
         <div className="flex animate-scroll-infinite gap-4">
-          {/* Repeat the images enough times to ensure continuous coverage */}
           {Array(20).fill(null).map((_, repeatIdx) => (
             images.map((src, idx) => (
               <a
