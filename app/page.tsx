@@ -21,6 +21,7 @@ export default async function Home() {
         <div className="bg-maincol basis-[100%] rounded-lg border-1 border-black h-52 flex justify-items-start">
           <div className="mt-auto mb-auto ml-3">
             <h1 className="text-7xl font-bold font-mono text-shadow-[0px_0px_2px_#500724]">ben ~ jasper</h1>
+            <br />
             <p className="">Works on mobile, better on computer.</p>
           </div>
           <div className="lg:visible invisible">
@@ -41,8 +42,11 @@ export default async function Home() {
                 <h1 className="text-2xl font-bold font-mono text-shadow-[0px_0px_2px_#500724]">~ Navigation</h1>
                 <Image src="https://web.archive.org/web/20060309092017if_/http://www.geocities.com/dazed_mirage/flowerpuffspin.gif" alt="flower spin" width={20} height={20} className="h-[20px] mt-auto mb-auto mr-auto ml-2"/>
               </div>
+              <Link href="/" className="hover:text-shadow-[0px_0px_2px_#500724]">
+                - home <br />
+              </Link>
               <Link href="/blog" className="hover:text-shadow-[0px_0px_2px_#500724]">
-                <br /> - blog <br />
+                - blog <br />
               </Link>
               <Link href="/obsessions" className="hover:text-shadow-[0px_0px_2px_#500724]">
                  - obsessions <br />
@@ -73,14 +77,6 @@ export default async function Home() {
               <br />
               <p className="text-xl">i&apos;m a student currently pursuing a career in mechanical engineering or possibly mechatronics. i also play the trombone, love video games like celeste, deltarune, and oneshot, and spend most of my time watching dimension 20. i&apos;m also a part of the 2702 Rebels FIRST robotics team, where i&apos;ve grown a love for cad design and metal manufacturing.</p>
               <a href="/obsessions" className="text-lg underline">Read More</a>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              .
             </div>
           </div>
         </div>

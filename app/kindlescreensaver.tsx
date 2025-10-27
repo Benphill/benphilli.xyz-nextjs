@@ -36,7 +36,7 @@ export default function Kindle() {
 
     return (
         <div className="m-auto ml-20 max-h-full rotate-25 top-0 left-0">
-            <img src={imgs[currentIndex]} height={"416"} className="absolute top-[23px] left-4 max-h-38"/>
+            <img src={imgs[currentIndex]} height={"416"} className="absolute top-[23px] left-[16px] max-h-38"/>
             <img src="/kindle.png" alt="Kindle Screensaver Outline" className="max-h-52" />
         </div>
     )
