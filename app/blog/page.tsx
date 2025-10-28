@@ -29,7 +29,7 @@ export default async function BlogPage() {
             <br />
             <p className="">Works on mobile, better on computer.</p>
           </div>
-          <div className="lg:visible invisible">
+          <div className="lg:visible invisible lg:relative absolute">
             <Kindle />
           </div>
         </div>
@@ -64,15 +64,15 @@ export default async function BlogPage() {
                 {allPosts.length === 0 ? (
                     <p className="text-gray-600">No posts yet.</p>
                 ) : (
-                    <div className="space-y-6">
+                    <div className="">
                     {allPosts.map((post) => (
                         <Link
                         key={post.id}
                         href={`/blog/${post.slug}`}
-                        className="block p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow"
+                        className="block p-2  border-black rounded-lg max-w-fit mt-3 mr-auto ml-auto hover:text-shadow-[0px_0px_1px_#500724]"
                         >
                         <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
-                        <p className="text-gray-500 text-sm">
+                        <p className="text-sm">
                             {new Date(post.createdAt).toLocaleDateString()}
                         </p>
                         </Link>

@@ -24,7 +24,7 @@ export default async function Home() {
             <br />
             <p className="">Works on mobile, better on computer.</p>
           </div>
-          <div className="lg:visible invisible">
+          <div className="lg:visible invisible lg:relative absolute">
             <Kindle />
           </div>
         </div>
