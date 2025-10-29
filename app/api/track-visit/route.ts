@@ -8,15 +8,49 @@ const redis = new Redis({
   token: process.env.KV_REST_API_TOKEN!,
 });
 
-export async function POST() {
+function parseCookies(cookieHeader?: string) {
+  const map: Record<string, string> = {};
+  if (!cookieHeader) return map;
+  cookieHeader.split(';').forEach((c) => {
+    const [k, ...v] = c.trim().split('=');
+    if (!k) return;
+    map[k] = decodeURIComponent(v.join('='));
+  });
+  return map;
+}
+
+export async function POST(request: Request) {
   try {
-    // Increment visitor count atomically
-    const newCount = await redis.incr('visitorCount');
-    
-    return NextResponse.json({ 
-      count: newCount,
-      message: 'Visit tracked'
+    const cookieHeader = request.headers.get('cookie') || '';
+    const cookies = parseCookies(cookieHeader);
+
+    // If visitor already has an id cookie, just return current unique count
+    if (cookies['visitorId']) {
+      const count = (await redis.scard('visitorIds')) || 0;
+      return NextResponse.json({
+        count,
+        newVisit: false,
+      });
+    }
+
+    // New visitor: create an id, add to Redis set and set cookie
+    const visitorId = crypto.randomUUID();
+    await redis.sadd('visitorIds', visitorId);
+    const count = (await redis.scard('visitorIds')) || 0;
+
+    const res = NextResponse.json({
+      count,
+      newVisit: true,
     });
+
+    // Set cookie for 1 year so future requests are considered the same visitor
+    res.cookies.set('visitorId', visitorId, {
+      maxAge: 60 * 60 * 24 * 365,
+      path: '/',
+      sameSite: 'lax',
+    });
+
+    return res;
   } catch (error) {
     console.error('Error tracking visit:', error);
     return NextResponse.json({ error: 'Failed to track visit' }, { status: 500 });
@@ -25,7 +59,7 @@ export async function POST() {
 
 export async function GET() {
   try {
-    const count = await redis.get<number>('visitorCount') || 0;
+    const count = (await redis.scard('visitorIds')) || 0;
     return NextResponse.json({ count });
   } catch (error) {
     console.error('Error fetching visitor count:', error);

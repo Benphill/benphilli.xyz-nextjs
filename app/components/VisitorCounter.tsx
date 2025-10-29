@@ -11,25 +11,25 @@ export default function VisitorCounter() {
       try {
         const response = await fetch('/api/track-visit', {
           method: 'POST',
+          credentials: 'same-origin', // ensure browser accepts Set-Cookie
         });
         const data = await response.json();
-        setCount(data.count);
+        setCount(data.count ?? null);
       } catch (error) {
         console.error('Failed to track visit:', error);
       } finally {
         setLoading(false);
       }
     };
-
     trackVisit();
   }, []);
 
   if (loading) return <div>Loading...</div>;
-  
+
   return (
     <div>
-        <br />
-       - cool people: {count?.toLocaleString() || '—'}
+      <br />
+      - cool people: {count?.toLocaleString() || '—'}
     </div>
   );
 }
