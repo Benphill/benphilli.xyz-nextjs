@@ -1,2 +1,5 @@
 User-agent: * 
-Disallow: /
+Disallow: /dev
+Disallow: /dev2
+
+Sitemap: https://benphilli.xyz/sitemap-0.xml
