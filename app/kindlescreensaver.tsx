@@ -9,7 +9,7 @@ export default function Kindle() {
         "/kindle/celeste.jpg",
         "/kindle/Deltarune.png",
         "/kindle/HK.png",
-        "/kindle/JuniorYear.png",
+        "/kindle/Junioryear.png",
         "/kindle/Nut_Pug.png",
         "/kindle/oneshot.png",
         "/kindle/Rebels.jpg",
