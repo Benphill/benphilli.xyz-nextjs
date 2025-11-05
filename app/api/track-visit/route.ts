@@ -23,13 +23,20 @@ export async function POST(request: Request) {
   try {
     const cookieHeader = request.headers.get('cookie') || '';
     const cookies = parseCookies(cookieHeader);
+    const visitorCookie = cookies['visitorId'];
 
-    // If visitor already has an id cookie, just return current unique count
-    if (cookies['visitorId']) {
+    // If visitor already has an id cookie, ensure the Redis set contains it.
+    // This recreates the key if it was deleted in the Upstash data browser.
+    if (visitorCookie) {
+      const isMember = await redis.sismember('visitorIds', visitorCookie);
+      if (!isMember) {
+        // Re-add the existing visitor ID to recreate the set/key
+        await redis.sadd('visitorIds', visitorCookie);
+      }
       const count = (await redis.scard('visitorIds')) || 0;
       return NextResponse.json({
         count,
-        newVisit: false,
+        newVisit: !isMember, // indicates whether we had to re-add the id
       });
     }
 
