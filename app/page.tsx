@@ -49,13 +49,16 @@ export default async function Home() {
                 - blog <br />
               </Link>
               <Link href="/obsessions" className="hover:text-shadow-[0px_0px_2px_#500724]">
-                 - obsessions <br />
+                 - obsessions (coming soon)<br />
               </Link>
               <Link href="/guestbook" className="hover:text-shadow-[0px_0px_2px_#500724]">
-                 - guestbook <br />
+                 - guestbook (coming soon)<br />
               </Link>
               <Link href="/gallery" className="hover:text-shadow-[0px_0px_2px_#500724]">
-                 - gallery <br />
+                 - gallery (coming soon)<br />
+              </Link>
+              <Link href="/school" className="hover:text-shadow-[0px_0px_2px_#500724]">
+                 - school work<br />
               </Link>
             </div>
             <div className="bg-maincol mt-4 p-2 border-1 rounded-lg border-black">
@@ -76,7 +79,7 @@ export default async function Home() {
               <h1 className="text-2xl text-shadow-[0px_0px_2px_#500724]">about me</h1>
               <br />
               <p className="text-xl">i&apos;m a student currently pursuing a career in mechanical engineering or possibly mechatronics. i also play the trombone, love video games like celeste, deltarune, and oneshot, and spend most of my time watching dimension 20. i&apos;m also a part of the 2702 Rebels FIRST robotics team, where i&apos;ve grown a love for cad design and metal manufacturing.</p>
-              <a href="/obsessions" className="text-lg underline">Read More</a>
+              {/*<a href="/obsessions" className="text-lg underline">Read More</a>*/}
             </div>
           </div>
         </div>

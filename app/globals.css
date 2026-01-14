@@ -12,6 +12,7 @@
   --color-lightbloo: var(--lightbloo);
   --color-maincol: var(--maincol);
   --color-lightcol: var(--lightcol);
+  --color-lotraccent: var(--lotraccent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -24,6 +25,7 @@
     --lightbloo: #896D6B;
     --maincol: #ffffff56;
     --lightcol: #896D6B;
+    --lotraccent: #ebba52;
   }
 }
 
