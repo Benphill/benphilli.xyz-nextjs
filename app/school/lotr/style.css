@@ -8,3 +8,16 @@
     transform: translateX(-50%); /* End position: first content off-screen */
   }
 }
+
+@keyframes scale {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(105%);
+  }
+}
+
+.animate-scroll-infinite:hover {
+    animation-play-state: paused;
+}
