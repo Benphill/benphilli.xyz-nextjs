@@ -57,9 +57,6 @@ export default async function Home() {
               <Link href="/gallery" className="hover:text-shadow-[0px_0px_2px_#500724]">
                  - gallery (coming soon)<br />
               </Link>
-              <Link href="/school" className="hover:text-shadow-[0px_0px_2px_#500724]">
-                 - school work<br />
-              </Link>
             </div>
             <div className="bg-maincol mt-4 p-2 border-1 rounded-lg border-black">
               <div className="flex w-full justify-items-center">
@@ -80,6 +77,12 @@ export default async function Home() {
               <br />
               <p className="text-xl">i&apos;m a student currently pursuing a career in mechanical engineering or possibly mechatronics. i also play the trombone, love video games like celeste, deltarune, and oneshot, and spend most of my time watching dimension 20. i&apos;m also a part of the 2702 Rebels FIRST robotics team, where i&apos;ve grown a love for cad design and metal manufacturing.</p>
               {/*<a href="/obsessions" className="text-lg underline">Read More</a>*/}
+              <br /><br />
+              <p className="text-xl">i also host all the shitty pages i make for school:</p>
+              <ul className="list-disc list-inside text-xl">
+                <li><Link href="/school/lotr" className="underline hover:text-shadow-[0px_0px_2px_#500724]">Lord of the Rings Creative Summative</Link></li>
+              </ul>
+              <br />
             </div>
           </div>
         </div>
