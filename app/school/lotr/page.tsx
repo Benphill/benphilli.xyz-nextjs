@@ -31,7 +31,7 @@ export default function Lotr() {
                     <hr className="border-lotraccent w-3/4 mt-2 mb-4 border-dashed"/>
                     <TimelineItem img={imagerotator(["/lotr/boromir.jpg", "/lotr/boromir2.jpg"])} text="Why should we not think that the Great Ring has come into our hands to serve us in the very hour of need?" subtext="- Boromir speaking to the council of Elrond about using the ring to help Gondor"/>
                     <TimelineItem img={imagerotator(["/lotr/gollum.jpg", "/lotr/gollum2.jpeg", "/lotr/gollum3.jpg"])} text="Still, he&apos;s a Baggins, my precious, yes, a Baggins. A  Baggins stole it. [..] We hates Bagginses. [...] All peoples that keep the Precious. We must have it!" subtext="- Gollum speaking to Smeagol about Frodo"/>
-                    <TimelineItem img={imagerotator(["/lotr/saruman.jpg", "/lotr/saruman2.jpg"])} text="The time of the Elves is over, but our time is at hand: the world of men, which we must rule. But we must have power, power to order all things as we will. [...] The Ruling Ring? If we could command that, then the power could pass to us." subtext="- Sauruman speaking to Gandalf"/>
+                    <TimelineItem img={imagerotator(["/lotr/saruman.jpg", "/lotr/saruman2.jpg"])} text="The time of the Elves is over, but our time is at hand: the world of men, which we must rule. But we must have power, power to order all things as we will. [...] The Ruling Ring? If we could command that, then the power could pass to us." subtext="- Saruman speaking to Gandalf"/>
                  </div>
                  <div className="w-full h-max mt-15 overflow-hidden p-3 mb-0 whitespace-nowrap border border-lotraccent">
                     <div className="inline-flex animate-[scroll_40s_linear_infinite]">
