@@ -3,20 +3,28 @@ import Image from "next/image";
 
 export default function ImageMarquee() {
   const images = [
-    "https://max.nekoweb.org/images/button.png",
-    "https://cyber.dabamos.de/88x31/bestcanada.gif",
-    "https://cyber.dabamos.de/88x31/cssdif.gif",
-    "https://penguinjaa.com/images/buttons/neopenguinjaa.gif",
-    "https://dimden.dev/services/images/88x31.gif",
-    "https://cyber.dabamos.de/88x31/ezgif2.gif"
+    "/marquee/88x31.gif",
+    "/marquee/bestcanada.gif",
+    "/marquee/button_88x31.png",
+    "/marquee/Button_Firefox_Now.png",
+    "/marquee/Button_Indie_Games_Now.png",
+    "/marquee/Button_Starwalker.gif",
+    "/marquee/button.webp",
+    "/marquee/cssdif.webp",
+    "/marquee/ezgif2.gif",
+    "/marquee/neopenguinjaa.gif"
   ];
 
   const links = [
-    "https://max.nekoweb.org",
     "",
     "",
-    "https://penguinjaa.com",
-    "https://dimden.dev/",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
     ""
   ];
 
@@ -26,14 +34,18 @@ export default function ImageMarquee() {
     "CSS is Difficult",
     "NEOPENGUINJAA",
     "Dimden.dev",
-    "Swatch Deltarune"
+    "Swatch Deltarune",
+    "Another Image",
+    "Another Image",
+    "Another Image",
+    "Another Image"
   ];
 
   return (
     <div className="max-w-full mt-4 pt-1 pb-1">
       <div className="relative overflow-hidden">
-        <div className="flex animate-scroll-infinite gap-4">
-          {Array(20).fill(null).map((_, repeatIdx) => (
+        <div className="flex animate-scroll-infinite gap-1">
+          {Array(30).fill(null).map((_, repeatIdx) => (
             images.map((src, idx) => (
               <a
                 key={`${repeatIdx}-${idx}`}

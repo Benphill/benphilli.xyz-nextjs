@@ -28,8 +28,7 @@ export default function VisitorCounter() {
 
   return (
     <div>
-      <br />
-      - cool people: {count?.toLocaleString() || '—'}
+      cool people: {count?.toLocaleString() || '—'}
     </div>
   );
 }

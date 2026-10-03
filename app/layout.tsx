@@ -26,15 +26,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://u.widget.st/ar.js"></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="flex justify-center items-end min-h-screen">
-          <div className="w-[100%] md:w-[75%] h-225 rounded-t-3xl flex">
-            {children}
-            <Analytics />
-            <SpeedInsights />
-          </div>
+        <main className="flex justify-center items-center min-h-screen">
+          {children}
+          <Analytics />
+          <SpeedInsights />
         </main>
       </body>
     </html>

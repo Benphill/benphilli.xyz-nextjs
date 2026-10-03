@@ -15,24 +15,38 @@
   --color-lotraccent: var(--lotraccent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-highlight: var(--higlight);
+  --color-bordercol: var(--bordercol);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
+    --background: #f0defc;
     --foreground: #000000;
     --bloo: #7DBACB;
     --lightbloo: #896D6B;
-    --maincol: #ffffff56;
+    --maincol: #e4aef600;
     --lightcol: #896D6B;
     --lotraccent: #ebba52;
+    --higlight: #530160cc;
+    --bordercol: #530160cc;
   }
 }
 
+@font-face {
+  font-family: grapeSoda; /* set name */
+  src: url(/GrapeSoda.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: Typewriter; /* set name */
+  src: url(/XTypewriter.ttf); /* url of the font */
+}
+
 body {
-  background-image: url(/pink.jpg);
-  background-size: 2 rem;
-  background-repeat: repeat;
+  /* background-image: url(/waterbg.jpg);*/
+  background-color: var(--background);
+  background-size: cover;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Typewriter;
 }

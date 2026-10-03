@@ -23,6 +23,8 @@ export default function Lotr() {
                 <style jsx global>{`
                     body {
                         background-image: url('/redlotr.jpg');
+                        background-size: auto;
+                        background-repeat: repeat;
                     }
                 `}</style>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
