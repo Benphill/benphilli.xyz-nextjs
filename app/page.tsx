@@ -33,7 +33,8 @@ export default async function Home() {
                 <h1 className="text-3xl font-[grapeSoda]">~ Status   </h1>
                 <Image src="https://web.archive.org/web/20060309092017if_/http://www.geocities.com/dazed_mirage/flowerpuffspin.gif" alt="flower spin" width={20} height={20} className="h-[20px] mt-auto mb-auto mr-auto ml-2"/>
               </div>
-              <ws-widget type="status" iid="17683"></ws-widget>
+              {/* @ts-expect-error Custom element is registered by the widget script. */}
+              <ws-widget type="status" iid="17683" />
             </div>
             <div className="bg-maincol mt-4 p-2 border-3 border-dashed border-[color:var(--color-bordercol)]">
               <div className="flex w-full justify-items-center">
@@ -84,7 +85,8 @@ export default async function Home() {
               </ul>
               <br />
               <div className="text-center">
-                <ws-widget type="adbank" iid="17604" embed="iframe"></ws-widget>
+                {/* @ts-expect-error Custom element is registered by the widget script. */}
+                <ws-widget type="adbank" iid="17604" embed="iframe" />
               </div>
             </div>
           </div>

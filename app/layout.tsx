@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import './globals.css';
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script src="https://u.widget.st/ar.js"></script>
+        <Script src="https://u.widget.st/ar.js" strategy="afterInteractive" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
