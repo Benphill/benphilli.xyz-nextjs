@@ -15,7 +15,11 @@ export const metadata = {
 export default async function Home() {
   return (
     <div className="w-[100%] md:w-[55%] h-min rounded-t-3xl flex">
-        <div className="w-full h-min text-[color:var(--color-highlight)] mt-20">
+      <div>
+        {/*<Image src="/overlays/Nine.png" alt="Pioneer 9" width={200} height={200} className="absolute top-40 left-20" />
+        <Image src="/overlays/Ten.png" alt="Pioneer 9" width={200} height={'auto'} className="absolute top-40 left-20" />*/}
+      </div>
+      <div className="w-full h-min text-[color:var(--color-highlight)] mt-20">
         <div className="bg-maincol basis-[100%] border-3 border-dashed border-[color:var(--color-bordercol)] h-52 flex justify-items-start">
           <div className="mt-auto mb-auto ml-3">
             <h1 className="text-7xl font-[grapeSoda]">ben ~ jasper</h1>
@@ -44,16 +48,16 @@ export default async function Home() {
               <Link href="/" className="hover:text-shadow-[0px_0px_2px_#500724]">
                 home <br />
               </Link>
-              <Link href="/blog" className="hover:text-shadow-[0px_0px_2px_#500724]">
-                blog <br />
+              <Link title="Coming soon" href="/blog" className="hover:text-shadow-[0px_0px_2px_#500724]">
+                blog <Image src="/clock-1.png" alt="Clock" width={20} height={20} className="float-right"/><br />
               </Link>
-              <Link href="/obsessions" className="hover:text-shadow-[0px_0px_2px_#500724]">
+              <Link title="Coming soon" href="/obsessions" className="hover:text-shadow-[0px_0px_2px_#500724]">
                 obsessions<Image src="/clock-1.png" alt="Clock" width={20} height={20} className="float-right"/>
               </Link><br />
-              <Link href="/guestbook" className="hover:text-shadow-[0px_0px_2px_#500724]">
+              <Link title="Coming soon" href="/guestbook" className="hover:text-shadow-[0px_0px_2px_#500724]">
                 guestbook<Image src="/clock-1.png" alt="Clock" width={20} height={20} className="float-right"/>
               </Link><br />
-              <Link href="/gallery" className="hover:text-shadow-[0px_0px_2px_#500724]">
+              <Link title="Coming soon" href="/gallery" className="hover:text-shadow-[0px_0px_2px_#500724]">
                 gallery<Image src="/clock-1.png" alt="Clock" width={20} height={20} className="float-right"/>
               </Link>
             </div>
@@ -74,7 +78,7 @@ export default async function Home() {
               <br /> 
               <h1 className="text-4xl font-[grapeSoda]">about me</h1>
               <br />
-              <p className="text-xl">i&apos;m a student currently pursuing a career in engineering, and i really like gaming and overly long video essays. i&apos;m also a part of the 2702 Rebels FIRST robotics team, where i&apos;ve developed a passion for design. customizing profiles is the only thing I do on social media, so this site is really just a permanent way to obsess about that customization with no limits :3 you can read more about me when i get around to making that page~</p>
+              <p className="text-xl">i&apos;m a student currently pursuing a career in engineering, and i really like gaming and overly long video essays. i&apos;m also a part of the <span className="font-[grapeSoda] text-[#BB090A] text-2xl">2702</span> <span className="font-[grapeSoda] text-black text-2xl">Rebels</span> FIRST robotics team, where i&apos;ve developed a passion for design. customizing profiles is the only thing I do on social media, so this site is really just a permanent way to obsess about that customization with no limits <span className="font-[grapeSoda] text-2xl">:3</span> you can read more about me when i get around to making that page~</p>
               {/*<a href="/obsessions" className="text-lg underline">Read More</a>*/}
               <br />
               <hr className="mt-6 mb-4 border-2 border-[color:var(--color-bordercol)] border-dashed w-100 ml-auto mr-auto"/>
