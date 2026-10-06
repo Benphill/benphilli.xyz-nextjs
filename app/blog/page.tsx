@@ -7,7 +7,7 @@ import { db } from "@/src/db";
 import { posts } from "@/src/db/schema";
 import { desc } from "drizzle-orm";
 
-export const revalidate = 0; // Disable caching for this page
+export const revalidate = 0;
 
 export const metadata = {
   title: 'Ben ~ Jasper',

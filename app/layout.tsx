@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="flex justify-center items-center min-h-screen">
+        <main className="flex justify-center items-center h-screen">
           {children}
           <Analytics />
           <SpeedInsights />

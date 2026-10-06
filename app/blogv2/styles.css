@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+h1 {
+ 	font-family: "GrapeSoda", sans-serif;
+ 	font-weight: normal;
+ 	font-style: normal;
+ 	font-size: 30px;
+ 	line-height: 30px;
+ 	color: #000000;
+ }
+
+ code {
+ 	font-family: "Fira Code", monospace;
+ 	font-weight: normal;
+ 	font-style: normal;
+ 	font-size: 16px;
+ 	line-height: 24px;
+ 	color: #cfc6c6;
+    background-color: #302424;
+}

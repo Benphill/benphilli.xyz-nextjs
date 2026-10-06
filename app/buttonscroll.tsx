@@ -29,16 +29,16 @@ export default function ImageMarquee() {
   ];
 
   const alts = [
-    "Max's Apartment",
-    "The Best Place is Canada",
-    "CSS is Difficult",
-    "NEOPENGUINJAA",
     "Dimden.dev",
+    "The Best Place is Canada",
+    "Wheel of Time Button",
+    "Firefox NOW",
+    "Indie Games NOW",
+    "This Button is Pissing Me Out I'm the Original Starwalker",
+    "Max's Apartment",
+    "CSS is Difficult",
     "Swatch Deltarune",
-    "Another Image",
-    "Another Image",
-    "Another Image",
-    "Another Image"
+    "NEOPENGUINJAA",
   ];
 
   return (

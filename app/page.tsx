@@ -83,11 +83,10 @@ export default async function Home() {
               <br />
               <hr className="mt-6 mb-4 border-2 border-[color:var(--color-bordercol)] border-dashed w-100 ml-auto mr-auto"/>
               <br />
-              <p className="text-xl">i also host any shitty pages i make for school:</p>
+              {/*<p className="text-xl">i also host any shitty pages i make for school:</p>
               <ul className="list-disc list-inside text-xl">
                 <li><Link href="/school/lotr" className="underline hover:text-shadow-[0px_0px_2px_#500724]">Lord of the Rings Creative Summative</Link></li>
-              </ul>
-              <br />
+              </ul>*/}
               <div className="text-center">
                 {/* @ts-expect-error Custom element is registered by the widget script. */}
                 <ws-widget type="adbank" iid="17604" embed="iframe" />
