@@ -90,6 +90,20 @@ export default async function Home() {
               <div className="p-4 justify-center">
                 <p className="text-xl">hey, i&apos;m ben! <span className="wave-container font-[grapeSoda]"><span className="text-red-600">(</span><span className="text-orange-600">h</span><span className="text-yellow-500">e</span><span className="text-green-600">/</span><span className="text-blue-600">h</span><span className="text-indigo-600">i</span><span className="text-purple-600">m</span><span className="text-pink-600">)</span></span> this is my personal website where i might post some stuff idk</p>
                 <br /> 
+                
+                <div className="mr-auto ml-auto w-100 border-3 border-black outline-white outline-3 bg-[#ffffff71] font-[grapeSoda]">
+                  <header className="w-full h-8 bg-black flex justify-items-end-safe">
+                    <div className="ml-3 text-white font-[grapeSoda] text-2xl">
+                      music
+                    </div>  
+                    <div className="font-[Typewriter] mr-3 ml-auto text-white text-l mt-auto mb-auto">
+                      - ☐ X
+                    </div>
+                  </header>
+                  {/* @ts-expect-error Custom element is registered by the widget script. */}
+                  <ws-widget type="lastfm" iid="18843"></ws-widget>
+                </div>
+                <br />
                 <p className="text-4xl font-[grapeSoda]">about me</p>
                 <br />
                 <p className="text-xl">i&apos;m a student currently pursuing a career in engineering, and i really like gaming and overly long video essays. i&apos;m also a part of the <span className="font-[grapeSoda] text-[#BB090A] text-2xl">2702</span> <span className="font-[grapeSoda] text-black text-2xl">Rebels</span> FIRST robotics team, where i&apos;ve developed a passion for design. customizing profiles is the only thing I do on social media, so this site is really just a permanent way to obsess about that customization with no limits <span className="font-[grapeSoda] text-2xl">:3</span> you can read more about me when i get around to making that page~</p>
