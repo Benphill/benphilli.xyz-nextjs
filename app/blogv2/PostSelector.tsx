@@ -21,13 +21,12 @@ export default function PostSelector({ posts }: Props) {
   const [selectedPost, setSelectedPost] = useState(posts[0]);
 
   return (
-    <div className="flex w-full h-full">
+    <div className="flex w-full h-full blogpage">
       <div className="lg:ml-10 w-100 overflow-y-auto mt-15">
         <h1 className="text-[100px] text-[#3e9be3] font-[grapeSoda]">Blog</h1>
         {posts.map((post) => (
-          <button
+          <div
             key={post.id}
-            type="button"
             onClick={() => setSelectedPost(post)}
             className="block w-full border-l-3 border-dashed text-left my-2"
             style={{ backgroundColor: randomColour() }}
@@ -38,7 +37,7 @@ export default function PostSelector({ posts }: Props) {
             <p className="text-sm ml-3">
               {new Date(post.createdAt).toLocaleDateString()}
             </p>
-          </button>
+          </div>
         ))}
       </div>
 

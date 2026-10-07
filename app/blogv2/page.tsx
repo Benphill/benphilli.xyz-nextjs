@@ -12,8 +12,6 @@ import PostSelector from "./PostSelector";
 export const revalidate = 0;
 export let Selpost = 0;
 
-
-
 export const metadata = {
   title: 'Ben ~ Jasper',
   description: 'Ben&apos;s Site',
@@ -28,7 +26,8 @@ export default async function BlogPage() {
     .orderBy(desc(posts.createdAt));
     
     return (
-      <div className="w-full h-screen bg-white">
+      <div className="w-full h-screen bg-white cursor-[]">
+        
           <div className="w-full flex justify-center absolute top-0 bg-white">
             <Link href="/" className="font-[grapeSoda] text-2xl ml-auto mr-auto">
               Home
