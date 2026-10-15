@@ -50,3 +50,8 @@ body {
   color: var(--foreground);
   font-family: Typewriter;
 }
+
+.pixel {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}

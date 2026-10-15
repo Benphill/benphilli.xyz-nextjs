@@ -1,0 +1,45 @@
+body {
+    /*background-image: url("/study.png");*/
+    background-color: #ffe1af;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+    background-position: center;
+}
+
+.frame4 {
+    border: 20px solid;
+    border-image: url(/borders/frame4full.png) 30 round;
+    padding: 5px;
+    margin: 5px;
+}
+
+.bookImg {
+    image-rendering: auto;
+}
+
+.shelves {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.animate-swing {
+    animation: swing 7s ease-in-out infinite;
+    transform-origin: top center;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+.book2{
+    animation-duration: 6s;
+}

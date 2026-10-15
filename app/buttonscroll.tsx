@@ -42,7 +42,7 @@ export default function ImageMarquee() {
   ];
 
   return (
-    <div className="max-w-full mt-4 pt-1 pb-1">
+    <div className="max-w-full mt-4 pt-1 pb-1 pixel">
       <div className="relative overflow-hidden">
         <div className="flex animate-scroll-infinite gap-1">
           {Array(30).fill(null).map((_, repeatIdx) => (

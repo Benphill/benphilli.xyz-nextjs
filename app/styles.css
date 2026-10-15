@@ -9,6 +9,22 @@
     }
 }
 
+@keyframes shake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-1deg);
+    }
+    75% {
+        transform: rotate(1deg);
+    }
+}
+
+.animate-shake {
+    animation: shake 1s linear infinite;
+}
+
 .animate-scroll-infinite {
     animation: scroll-infinite 8s linear infinite;
     will-change: transform;

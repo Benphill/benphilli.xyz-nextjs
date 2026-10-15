@@ -26,17 +26,18 @@ export default async function Home() {
       
 
   return (
-    <div className="w-[55%] h-min rounded-t-3xl flex">
+    <div className="w-[55%] h-min rounded-t-3xl flex ml-auto mr-auto">
       <div>
-        {/*<Image src="/overlays/Nine.png" alt="Pioneer 9" width={200} height={200} className="absolute top-40 left-20" />
-        <Image src="/overlays/Ten.png" alt="Pioneer 9" width={200} height={'auto'} className="absolute top-40 left-20" />*/}
+        <Image src="/overlays/Nine.png" alt="Pioneer 9" width={200} height={200} className="absolute top-40 left-20 h-auto animate-shake" />
+        <Image src="/overlays/Ten.png" alt="Pioneer 9" width={200} height={200} className="absolute top-100 right-50 h-auto animate-shake" />
+        <Image src="/overlays/JUICE.png" alt="Pioneer 9" width={200} height={200} className="absolute top-200 left-50 h-auto animate-shake" />
       </div>
-      <div className="w-full h-min text-(--color-highlight) mt-20">
+      <div className="w-full h-min text-(--color-highlight) mt-20 mb-20">
         <div className="bg-maincol basis-full border-3 border-dashed border-(--color-bordercol) h-52 flex justify-items-start">
           <div className="mt-auto mb-auto ml-3">
-            <p className="text-7xl font-[grapeSoda]">ben ~ jasper</p>
+            <p className="text-7xl font-[grapeSoda] ml-5">ben ~ jasper</p>
             <br />
-            <p className="">Works on mobile, better on computer.</p>
+            <p className="ml-5">please dont look at this on a phone</p>
           </div>
           <div className="lg:visible invisible lg:relative absolute text-end">
             <Kindle />
@@ -76,7 +77,7 @@ export default async function Home() {
             <div className="bg-maincol mt-4 p-2 border-3 border-dashed border-(--color-bordercol)">
               <div className="flex w-full justify-items-center">
                 <p className="text-3xl font-[grapeSoda]">~ visits</p>
-                <Image src="https://web.archive.org/web/20060309092017if_/http://www.geocities.com/dazed_mirage/flowerpuffspin.gif" alt="flower spin" width={20} height={20} className="h-[20px] mt-auto mb-auto mr-auto ml-2"/>
+                <Image src="https://web.archive.org/web/20060309092017if_/http://www.geocities.com/dazed_mirage/flowerpuffspin.gif" alt="flower spin" width={20} height={20} className="h-5 mt-auto mb-auto mr-auto ml-2"/>
               </div>
               {/* @ts-expect-error Custom element is registered by the widget script. */}
               <ws-widget type="hc" iid="17708"></ws-widget>
@@ -85,13 +86,16 @@ export default async function Home() {
           <div className="basis-7/10 w-20 lg:ml-3">
             <div className="bg-maincol mt-4 border-3 border-dashed border-(--color-bordercol) h-min min-w-0 overflow-x-hidden overflow-y-auto mb-10">
               <p className="text-4xl  font-[grapeSoda] text-center mt-4">~ welcome ~</p>
+              <div className="mt-auto mb-0">
+                <Image src="/overlays/zoneout.gif" alt="SiffrinZone Out" width={150} height={200} className="h-auto absolute top-58.5 left-252.75 pixel" />
+              </div>
               <ImageMarquee />
-              <hr className="mt-6 mb-4 border-2 border-(--color-bordercol) border-dashed w-100 ml-auto mr-auto"/>
+              <hr className="mt-6 mb-4 border-t-3 border-(--color-bordercol) border-dashed w-100 ml-auto mr-auto"/>
               <div className="p-4 justify-center">
                 <p className="text-xl">hey, i&apos;m ben! <span className="wave-container font-[grapeSoda]"><span className="text-red-600">(</span><span className="text-orange-600">h</span><span className="text-yellow-500">e</span><span className="text-green-600">/</span><span className="text-blue-600">h</span><span className="text-indigo-600">i</span><span className="text-purple-600">m</span><span className="text-pink-600">)</span></span> this is my personal website where i might post some stuff idk</p>
                 <br /> 
                 
-                <div className="mr-auto ml-auto w-100 border-3 border-black outline-white outline-3 bg-[#ffffff71] font-[grapeSoda]">
+                <div className="mr-auto ml-auto w-100 border-3 border-black border- outline-white outline-3 bg-white font-[grapeSoda] shadow-[10px_10px_0px_#00000030]">
                   <header className="w-full h-8 bg-black flex justify-items-end-safe">
                     <div className="ml-3 text-white font-[grapeSoda] text-2xl">
                       music
@@ -109,7 +113,7 @@ export default async function Home() {
                 <p className="text-xl">i&apos;m a student currently pursuing a career in engineering, and i really like gaming and overly long video essays. i&apos;m also a part of the <span className="font-[grapeSoda] text-[#BB090A] text-2xl">2702</span> <span className="font-[grapeSoda] text-black text-2xl">Rebels</span> FIRST robotics team, where i&apos;ve developed a passion for design. customizing profiles is the only thing I do on social media, so this site is really just a permanent way to obsess about that customization with no limits <span className="font-[grapeSoda] text-2xl">:3</span> you can read more about me when i get around to making that page~</p>
                 {/*<a href="/obsessions" className="text-lg underline">Read More</a>*/}
                 <br />
-                <hr className="mt-6 mb-4 border-2 border-(--color-bordercol) border-dashed w-100 ml-auto mr-auto"/>
+                <hr className="mt-6 mb-4 border-t-3 border-(--color-bordercol) border-dashed w-100 ml-auto mr-auto"/>
                 <br />
                 {/*<p className="text-xl">i also host any shitty pages i make for school:</p>
                 <ul className="list-disc list-inside text-xl">
@@ -121,7 +125,7 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-            <div className="border-3 border-black outline-4 outline-white bg-white w-full h-50 justify-start">
+            <div className="border-3 border-black outline-4 outline-white bg-white w-full h-50 justify-start shadow-[10px_10px_0px_#00000030]">
               <header className="w-full h-8 bg-black flex">
                   <div className="ml-3 text-white font-[grapeSoda] text-2xl">
                     Blog
