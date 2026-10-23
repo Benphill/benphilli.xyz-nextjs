@@ -50,7 +50,7 @@ export default function ImageMarquee() {
               <a
                 key={`${repeatIdx}-${idx}`}
                 href={links[idx]}
-                className="flex-shrink-0 block"
+                className="shrink-0 block"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -1,8 +1,6 @@
 import Link from "next/link";
 import "./styles.css"
 import Head from 'next/head'
-import Status from './status'
-import VisitorCounter from "./components/VisitorCounter";
 import ImageMarquee from "./buttonscroll";
 import Image from "next/image";
 import Kindle from "./kindlescreensaver";
@@ -82,14 +80,26 @@ export default async function Home() {
               {/* @ts-expect-error Custom element is registered by the widget script. */}
               <ws-widget type="hc" iid="17708"></ws-widget>
             </div>
+            <div className="bg-maincol mt-4 p-2 border-3 border-dashed border-(--color-bordercol)">
+              <div className="flex w-full justify-items-center">
+                <p className="text-3xl font-[grapeSoda]">~ like it?</p>
+                <Image src="https://web.archive.org/web/20060309092017if_/http://www.geocities.com/dazed_mirage/flowerpuffspin.gif" alt="flower spin" width={20} height={20} className="h-5 mt-auto mb-auto mr-auto ml-2"/>
+              </div>
+              <div className="text-center">
+                {/* @ts-expect-error Custom element is registered by the widget script. */}
+                <ws-widget type="like" iid="22987"></ws-widget>
+              </div>
+            </div>
           </div>
           <div className="basis-7/10 w-20 lg:ml-3">
             <div className="bg-maincol mt-4 border-3 border-dashed border-(--color-bordercol) h-min min-w-0 overflow-x-hidden overflow-y-auto mb-10">
               <p className="text-4xl  font-[grapeSoda] text-center mt-4">~ welcome ~</p>
-              <div className="mt-auto mb-0">
-                <Image src="/overlays/zoneout.gif" alt="SiffrinZone Out" width={150} height={200} className="h-auto absolute top-58.5 left-252.75 pixel" />
+              <div className="absolute right-[25%] top-58.5">
+                  <Image src="/overlays/zoneout.gif" alt="SiffrinZone Out" width={150} height={200} className="h-auto pixel" />
+                </div>
+              <div id="marquee">
+                <ImageMarquee />
               </div>
-              <ImageMarquee />
               <hr className="mt-6 mb-4 border-t-3 border-(--color-bordercol) border-dashed w-100 ml-auto mr-auto"/>
               <div className="p-4 justify-center">
                 <p className="text-xl">hey, i&apos;m ben! <span className="wave-container font-[grapeSoda]"><span className="text-red-600">(</span><span className="text-orange-600">h</span><span className="text-yellow-500">e</span><span className="text-green-600">/</span><span className="text-blue-600">h</span><span className="text-indigo-600">i</span><span className="text-purple-600">m</span><span className="text-pink-600">)</span></span> this is my personal website where i might post some stuff idk</p>
