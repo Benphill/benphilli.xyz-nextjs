@@ -1,5 +1,4 @@
-import { NextResponse } from 'next/server';
-import { get } from '@vercel/edge-config';
+/*import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
@@ -72,4 +71,4 @@ export async function GET() {
       { status: 500 }
     );
   }
-}
+}*/
