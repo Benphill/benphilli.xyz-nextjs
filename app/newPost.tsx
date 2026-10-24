@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { Post } from "@/src/db/schema";
 import { marked } from "marked";
 import "./blogv2/styles.css"
-import "./styles.css"
+import "./home/styles.css"
 import Link from "next/link";
 
 type Props = {

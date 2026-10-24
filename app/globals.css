@@ -43,6 +43,11 @@
   src: url(/XTypewriter.ttf); /* url of the font */
 }
 
+@font-face {
+  font-family: TypewriterBold; /* set name */
+  src: url(/XTypewriter-Bold.ttf); /* url of the font */
+}
+
 body {
   /* background-image: url(/waterbg.jpg);*/
   background-color: var(--background);

@@ -1,6 +1,6 @@
 "use client"
 
-import "./styles.css"
+import "./home/styles.css"
 import { useEffect, useState } from "react";
 
 const KINDLE_IMAGES = [
