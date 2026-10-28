@@ -14,6 +14,8 @@ export const metadata = {
   description: 'Ben&apos;s Site',
 };
 
+export const dynamic = 'force-dynamic';
+
 
 export default async function Home() {
   
