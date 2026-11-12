@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { Post } from "@/src/db/schema";
 import { marked } from "marked";
-import "./styles.css"
-import "../home/styles.css"
+import "./styles.css";
+import "../home/styles.css";
+import LikeButton from "./likes";
 
 type Props = {
   posts: Post[];
@@ -19,6 +20,17 @@ export function randomColour() {
 
 export default function PostSelector({ posts }: Props) {
   const [selectedPost, setSelectedPost] = useState(posts[0]);
+  const [likedPosts, setLikedPosts] = useState<Record<number, boolean>>({});
+
+  useEffect(() => {
+    const cookies = document.cookie.split("; ");
+    const likedMap: Record<number, boolean> = {};
+    posts.forEach((post) => {
+      const found = cookies.some((cookie) => cookie.startsWith(`liked_post_${post.id}=`));
+      if (found) likedMap[post.id] = true;
+    });
+    setLikedPosts(likedMap);
+  }, [posts]);
 
   return (
     <div className="flex w-full h-full blogpage">
@@ -45,6 +57,11 @@ export default function PostSelector({ posts }: Props) {
         <p
           className="text-[50px] text-black font-[grapeSoda]"
           dangerouslySetInnerHTML={{ __html: marked.parse(selectedPost.title) }}
+        />
+        <LikeButton 
+        postId={selectedPost.id}
+        initiallikes={selectedPost.likes ?? 0}
+        hasliked={!!likedPosts[selectedPost.id]} 
         />
         <p className="text-black whitespace-pre-wrap"
           dangerouslySetInnerHTML={{ __html: marked.parse(selectedPost.content) }}

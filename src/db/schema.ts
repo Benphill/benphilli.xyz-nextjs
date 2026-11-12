@@ -6,6 +6,7 @@ export const posts = pgTable("posts", {
   title: text("title").notNull(),
   content: text("content").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
+  likes: integer("likes"),
 });
 
 export type Post = typeof posts.$inferSelect;

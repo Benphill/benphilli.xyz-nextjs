@@ -6,7 +6,6 @@ import Kindle from "../kindlescreensaver";
 import { db } from "@/src/db";
 import { posts } from "@/src/db/schema";
 import { desc } from "drizzle-orm";
-import { eq } from "drizzle-orm";
 import PostSelector from "./PostSelector";
 
 export const revalidate = 0;

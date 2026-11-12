@@ -64,15 +64,15 @@ export default async function Home() {
               <Link href="/blogv2" className="hover:text-shadow-[0px_0px_2px_#500724]">
                 blog <br />
               </Link>
-              <Link title="Coming soon" href="/obsessions" className="hover:text-shadow-[0px_0px_2px_#500724]">
+              <p title="Coming soon" /*href="/obsessions"*/ className="hover:text-shadow-[0px_0px_2px_#500724]">
                 obsessions<Image src="/clock-1.png" alt="Clock" width={20} height={20} className="float-right"/>
-              </Link><br />
-              <Link title="Coming soon" href="/guestbook" className="hover:text-shadow-[0px_0px_2px_#500724]">
+              </p>
+              <p title="Coming soon" /*href="/guestbook"*/ className="hover:text-shadow-[0px_0px_2px_#500724]">
                 guestbook<Image src="/clock-1.png" alt="Clock" width={20} height={20} className="float-right"/>
-              </Link><br />
-              <Link title="Coming soon" href="/gallery" className="hover:text-shadow-[0px_0px_2px_#500724]">
+              </p>
+              <p title="Coming soon" /*href="/gallery"*/ className="hover:text-shadow-[0px_0px_2px_#500724]">
                 gallery<Image src="/clock-1.png" alt="Clock" width={20} height={20} className="float-right"/>
-              </Link>
+              </p>
             </div>
             <div className="bg-maincol mt-4 p-2 border-3 border-dashed border-(--color-bordercol)">
               <div className="flex w-full justify-items-center">
