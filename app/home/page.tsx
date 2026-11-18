@@ -32,6 +32,10 @@ export default async function Home() {
         <Image src="/overlays/Ten.png" alt="Pioneer 9" width={200} height={200} className="absolute top-100 right-50 h-auto animate-shake" style={{ pointerEvents: "none" }} />
         <Image src="/overlays/JUICE.png" alt="Pioneer 9" width={200} height={200} className="absolute top-200 left-50 h-auto animate-shake" style={{pointerEvents: "none"}} />
       </div>
+      <div className="absolute w-100 h-min left-35 top-260 border-4">
+        {/* @ts-expect-error Custom element is registered by the widget script. */}
+        <ws-widget type="comments" iid="29596"></ws-widget>
+      </div>
       <div className="w-full h-min text-(--color-highlight) mt-20 mb-20">
         <div className="bg-maincol basis-full border-3 border-dashed border-(--color-bordercol) h-52 flex justify-items-start">
           <div className="mt-auto mb-auto ml-3">

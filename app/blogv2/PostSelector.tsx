@@ -58,11 +58,11 @@ export default function PostSelector({ posts }: Props) {
           className="text-[50px] text-black font-[grapeSoda]"
           dangerouslySetInnerHTML={{ __html: marked.parse(selectedPost.title) }}
         />
-        <LikeButton 
+        {/*<LikeButton
         postId={selectedPost.id}
         initiallikes={selectedPost.likes ?? 0}
         hasliked={!!likedPosts[selectedPost.id]} 
-        />
+        /> */}
         <p className="text-black whitespace-pre-wrap"
           dangerouslySetInnerHTML={{ __html: marked.parse(selectedPost.content) }}
         />
